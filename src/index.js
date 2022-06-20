@@ -1,3 +1,4 @@
-const sum = require("./sum");
+const { getTotalWithTaxes } = require("./cart");
+const cart = require("./products");
 
-console.log(sum(1, 2));
+console.log("Your total is: " + getTotalWithTaxes(cart));
